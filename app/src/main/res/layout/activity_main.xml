@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- For team A-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_name_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="@string/team_name_a"
+                android:textColor="#616161"
+                app:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="2dp"
+                android:text="@string/default_score"
+                android:textColor="@android:color/black"
+                android:textSize="56sp"
+                app:fontFamily="sans-serif-light" />
+
+
+            <TextView
+                android:id="@+id/team_a_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/default_foul"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="20dp"/>
+
+
+            <Button
+                android:id="@+id/team_a_goal_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/goal_color"
+                android:onClick="goal_teamA"
+                android:text="@string/goal_btn_txt" />
+
+            <Button
+                android:id="@+id/team_a_foul_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/foul_color"
+                android:onClick="foul_teamA"
+                android:text="@string/foul_btn_txt" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:padding="4dp" />
+
+
+        <!-- For team B-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/team_name_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="@string/team_name_b" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="1dp"
+                android:text="@string/default_score"
+                android:textColor="@android:color/black"
+                android:textSize="56sp"
+                app:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:id="@+id/team_b_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/default_foul"
+                android:paddingBottom="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/team_b_goal_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/goal_color"
+                android:onClick="goal_teamB"
+                android:text="@string/goal_btn_txt" />
+
+            <Button
+                android:id="@+id/team_b_foul_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/foul_color"
+                android:onClick="foul_teamB"
+                android:text="@string/foul_btn_txt" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/match_reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32sp"
+        android:onClick="newMatchBtn"
+        android:text="@string/reset_btn_txt" />
+
+
+</RelativeLayout>

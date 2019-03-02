@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Football Scores</string>
+    <string name="team_name_a">Team A</string>
+    <string name="team_name_b">Team B</string>
+    <string name="default_score">0</string>
+    <string name="default_foul">Fouls: 0</string>
+    <string name="goal_btn_txt">Goal</string>
+    <string name="foul_btn_txt">Foul</string>
+    <string name="reset_btn_txt">New Match</string>
+</resources>
