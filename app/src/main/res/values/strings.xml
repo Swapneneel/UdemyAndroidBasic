@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practice Score 2</string>
+    <string name="title_text_A">Team A</string>
+    <string name="default_score">0</string>
+    <string name="btn_3_txt">+3 Score</string>
+    <string name="btn_2_txt">+2 Score</string>
+    <string name="btn_free_txt">Free Score</string>
+    <string name="reset_btn_txt">Reset</string>
+    <string name="title_text_B">Team B</string>
+</resources>
